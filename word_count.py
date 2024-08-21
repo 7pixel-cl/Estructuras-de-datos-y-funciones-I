@@ -9,7 +9,7 @@ def contar_palabras_y_caracteres(texto):
         dict: Un diccionario con el número de caracteres y palabras distintas.
     """
     caracteres_distintos = len(set(texto))
-    palabras_distintas = len(set(texto.split()))
+    palabras_distintas = len(set(texto.split(" ")))
     return {
         "caracteres_distintos": caracteres_distintos,
         "palabras_distintas": palabras_distintas
